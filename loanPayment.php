@@ -3708,33 +3708,6 @@ function test_input($data){
 <head>
     <?php include "css.html" ?>
     <title>Payment</title>
-
-    <script>
-    //i = 0;
-    $(document).ready(function(){
-        $("#rcqv").keyup(function(){
-
-            var riceIA = 0;
-            riceIA = Number($("#rcqv").val()) * Number(40);
-
-            $("#rcia").val(riceIA);
-        });
-
-        $(".famount").keyup(function(){
-
-            var totalC = 0;
-            $('.famount').each(function() {
-                totalC += Number($(this).val());
-            });
-
-            //var totalR = 0;
-            //totalR = Number($("#la").val()) - Number(totalC);
-
-            $("#totalP").val(totalC);
-            //$("#tarelease").val(totalR);
-        });
-    });
-    </script>
 </head>
 
 <body>
